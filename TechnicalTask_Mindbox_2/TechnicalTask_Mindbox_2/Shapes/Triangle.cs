@@ -17,8 +17,8 @@ namespace EasyShapes.Shapes
 
         public double GetArea()
         {
-            var p = A + B + C;
-            return Math.Sqrt(p) * (p - A) * (p - B) * (p - C);
+            var p = (A + B + C) / 2d;
+            return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
         }
 
         public bool IsRightTriangle()
